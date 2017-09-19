@@ -13,22 +13,16 @@ public class SceneChanger : MonoBehaviour {
 		hidePaused();
 	}
 
-    void Update()
-    {
-        // Pause and unpause the game with Return-key
+	// Pause and unpause the game with Return-key
+    void Update() {
         if(Input.GetKeyDown(KeyCode.Return))
         {
             pauseControl();
         }
     }
 
-    // Reloads the Level
-	public void Reload(){
-		Application.LoadLevel(Application.loadedLevel);
-	}
-
 	// Controls the pausing of the scene
-	public void pauseControl(){
+	public void pauseControl() {
 			if(Time.timeScale == 1)
 			{
 				Time.timeScale = 0;
@@ -39,8 +33,19 @@ public class SceneChanger : MonoBehaviour {
 			}
 	}
 
+	// Reloads the Level
+	public void Reload() {
+		Application.LoadLevel(Application.loadedLevel);
+	}
+
+	// Returns to main menu
+	public void Quit() {
+		Debug.Log("Quitting... returning to main menu");
+        Application.LoadLevel("MenuScene");
+	}
+
 	// Show objects (menu items) with ShowOnPause tag
-	public void showPaused(){
+	public void showPaused() {
         Debug.Log ("Show pause menu objects");
 		foreach(GameObject g in pauseObjects){
 			g.SetActive(true);
@@ -48,27 +53,16 @@ public class SceneChanger : MonoBehaviour {
 	}
 
 	// Hide objects with ShowOnPause tag
-	public void hidePaused(){
+	public void hidePaused() {
         Debug.Log ("Hide pause menu objects");
 		foreach(GameObject g in pauseObjects){
 			g.SetActive(false);
 		}
 	}
 
-    
-    public void LoadLevel(string name)
-    {
+	// Load first level from main menu
+    public void LoadLevel(string name) {
         Debug.Log("Levelid: " + name);
         Application.LoadLevel(name);
     }
-    
-
-    //loads inputted level
-    /*
-	public void LoadLevel(string level){
-		Application.LoadLevel(level);
-	}
-
-    */
-
 }
