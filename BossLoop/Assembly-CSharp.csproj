@@ -51,8 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_Scripts\PlayerController.cs" />
-     <Compile Include="Assets\_Scripts\SceneChanger.cs" />
+     <Compile Include="Assets\_Scripts\EnemyScripts\SkeletonKingScript\SkeletonActionScript.cs" />
+     <Compile Include="Assets\_Scripts\GameplayScripts\SceneChanger.cs" />
+     <Compile Include="Assets\_Scripts\PlayerScripts\PlayerController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity 2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
