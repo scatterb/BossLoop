@@ -28,7 +28,7 @@ public class SceneChanger : MonoBehaviour {
 				Time.timeScale = 0;
 				showPaused();
 			} else if (Time.timeScale == 0){
-				Time.timeScale = 1;
+                Time.timeScale = 1;
 				hidePaused();
 			}
 	}

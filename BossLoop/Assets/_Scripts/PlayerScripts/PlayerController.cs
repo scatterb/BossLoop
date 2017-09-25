@@ -5,16 +5,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float speed = 10.0f;
+    public Rigidbody2D rigidbody;
+    Vector2 AxisInput;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    // Use this for initialization
+    void Start () {
+        rigidbody.freezeRotation = true;
+    }
 	
 	// Update is called once per frame
 	void Update () {
-           
-        if(Input.GetKey(KeyCode.W))
+
+        /*if(Input.GetKey(KeyCode.W))
         {
             transform.position += Vector3.up * speed * Time.deltaTime;
         }
@@ -30,7 +32,13 @@ public class PlayerController : MonoBehaviour {
         {
             transform.position += Vector3.right * speed * Time.deltaTime;
         }
+        */
+
+        Vector2 AxisInput = (new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")));
         
+        rigidbody.velocity = AxisInput * speed;
 
     }
+
+    
 }
