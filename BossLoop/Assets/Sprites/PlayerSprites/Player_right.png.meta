@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 48ea4627e119a844abcb14e998afad67
-timeCreated: 1506359067
+guid: 1105632cfb5d49948b5fbc391141057b
+timeCreated: 1506444302
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: idle1
-    21300002: idle2
+    21300000: right1
+    21300002: right2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -77,13 +77,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle1
+      name: right1
       rect:
         serializedVersion: 2
-        x: 4
+        x: 9
         y: 0
         width: 53
-        height: 63
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -91,13 +91,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: idle2
+      name: right2
       rect:
         serializedVersion: 2
-        x: 68
+        x: 73
         y: 0
-        width: 53
-        height: 64
+        width: 55
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
