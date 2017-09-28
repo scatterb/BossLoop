@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BossLoop", "Assembly-CSharp.csproj", "{46DB8354-21DC-4C02-61FF-B0E9F5959336}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BossLoop", "BossLoop.csproj", "{305F056E-E737-E583-59B4-FD2A7F950C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{46DB8354-21DC-4C02-61FF-B0E9F5959336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46DB8354-21DC-4C02-61FF-B0E9F5959336}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46DB8354-21DC-4C02-61FF-B0E9F5959336}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46DB8354-21DC-4C02-61FF-B0E9F5959336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305F056E-E737-E583-59B4-FD2A7F950C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305F056E-E737-E583-59B4-FD2A7F950C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305F056E-E737-E583-59B4-FD2A7F950C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305F056E-E737-E583-59B4-FD2A7F950C82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
